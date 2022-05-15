@@ -36,17 +36,18 @@ public class ArrayUtil {
 
             result = result + array[i];
 
-            System.out.println("gumare=  " + result);
-            System.out.println(" tvabanakan= " + result / 9);
+
         }
+        System.out.println("gumare =" + result);
+        System.out.println("tvabanakan=" + result / 9);
 
         System.out.println("zuyg elementner");
         for (int j = 0; j < array.length; j++) {
             if (array[j] % 2 == 0) {
                 System.out.println(array[j]);
             }
-            System.out.println("kent elementner");
         }
+        System.out.println("kent elementner");
         for (int j = 0; j < array.length; j++) {
             if (array[j] % 2 != 0) {
                 System.out.println(array[j]);
@@ -63,7 +64,7 @@ public class ArrayUtil {
             }
         }
         System.out.println(" main= " + main);
-
+        System.out.println("kenteri qanak@");
         int bit = 0;
         for (int j = 0; j < array.length; j++) {
             if (array[j] % 2 != 0) {
