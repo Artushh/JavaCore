@@ -10,24 +10,24 @@ public class ArrayUtil {
         }
 //amena mec tive
 
-        int y = array[0];
+        int max = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > y) {
-                y = array[i];
+            if (array[i] > max) {
+                max = array[i];
             }
         }
         System.out.println();
-        System.out.println("mec  " + y);
+        System.out.println("մեծ  " + max);
 //tepl amena poqr tive
-        int x = array[0];
+        int min = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] < x) {
-                x = array[i];
+            if (array[i] < min) {
+                min = array[i];
 
             }
 
         }
-        System.out.println("poqr  " + x);
+        System.out.println("փոքր  " + min);
 
 //mijin tvabanakan    u @ndhanur gumare
         int result = 0;
@@ -38,42 +38,42 @@ public class ArrayUtil {
 
 
         }
-        System.out.println("gumare =" + result);
-        System.out.println("tvabanakan=" + result / 9);
+        System.out.println("էլեմենտների գումարը =" + result);
+        System.out.println("միջին թվաբանականը=" + result / array.length);
 
-        System.out.println("zuyg elementner");
+        System.out.println("զույգ էլեմենտներ");
         for (int j = 0; j < array.length; j++) {
             if (array[j] % 2 == 0) {
                 System.out.println(array[j]);
             }
         }
-        System.out.println("kent elementner");
+        System.out.println("կենտ էլեմենտներ");
         for (int j = 0; j < array.length; j++) {
             if (array[j] % 2 != 0) {
                 System.out.println(array[j]);
             }
 
         }
-        System.out.println("zuygeri qanak@");
-        int main = 0;
+        System.out.println("զույգերի քանակը");
+        int couplescount = 0;
         for (int j = 0; j < array.length; j++) {
             if (array[j] % 2 == 0) {
-                main++;
+                couplescount++;
 
 
             }
         }
-        System.out.println(" main= " + main);
-        System.out.println("kenteri qanak@");
-        int bit = 0;
+        System.out.println(" couplescount= " + couplescount);
+        System.out.println("կենտերի քանակը");
+        int oddcount = 0;
         for (int j = 0; j < array.length; j++) {
             if (array[j] % 2 != 0) {
-                bit++;
+                oddcount++;
 
 
             }
         }
-        System.out.println("bit=" + bit);
+        System.out.println("oddcount=" + oddcount);
 
 
     }
